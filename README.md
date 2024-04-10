@@ -23,3 +23,7 @@ At the beginning of each trial, a fixation cross is presented, with a size of 1 
 
 Participants are randomly assigned to either a 'more' or 'less' condition. In the 'more' condition, they are asked to respond to the stimulus with a greater number of dots. In the 'less' condition, they are asked to respond to the stimulus with a fewer number of dots.
 Confidence is reported for each condition.
+
+## Reference
+
+Sakamoto, Y., & Miyoshi, K. (2024). A confidence framing effect: Flexible use of evidence in metacognitive monitoring. Consciousness and Cognition, 118, 103636.
