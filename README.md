@@ -9,8 +9,12 @@ Replication of experiment from Sakamoto & Miyoshi (2024) examining confidence fr
 
 Stimuli are white dots with a size of 0.15 degrees of visual angle. The dots appear within a white rimmed circle with size 6 degrees of visual angle. There are two circles filled with dots presented on screen.
 The number of dots in one stimulus is set on three levels (50, 100, 150). The number of dots in the second stimulus varies on 20 levels from this baseline in steps of 2% increase or decrease.
+The dots are positioned randomly within the circle frame.
 
 Each dot number level is presnted four times.
+
+To generate the stimuli please call generate_dot_arrays.py
+The images generated and saved by this script will be used for the experiment.
 
 ### Proceudre
 
