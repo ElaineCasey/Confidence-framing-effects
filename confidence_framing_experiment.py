@@ -14,21 +14,6 @@ DOT_NUMBER = 10
 CLOUD_RADIUS = 10
 
 
-def generate_numbers(baseline, percent_increases):
-    dotnums_list = []
-    for i in baseline:
-        for pchange in percent_increases:
-            adjusted_num = int(i * (1 + pchange))
-            if adjusted_num != i:
-                dotnums_list.append(adjusted_num)
-    return dotnums_list
-
-
-baseline_levels = [50, 100, 150]
-percent_increases = np.linspace(-0.20, 0.20, 21)
-dotnumberspertrial = generate_numbers(baseline_levels, percent_increases)
-
-
 def display_scale():  # change to present as image
     scale_text = "How confident are you? 1 - Not confident at all  2 - Somewhat confident  3 - Quite confident  4 - Very confident"
     scale = stimuli.TextLine(scale_text, position=(0, 0))
@@ -36,13 +21,13 @@ def display_scale():  # change to present as image
     scale.present()
 
 
-# change so that conditions are pre-specified per block
+# change so that conditions are pre-specified per subject
 if random.random() > 0.5:
     FRAME_CONDITION = 'MORE'
 else:
     FRAME_CONDITION = 'LESS'
 
-# initialise experiment
+# Initialise experiment
 exp = design.Experiment(name="Confidence-framing",
                         text_size=30,
                         background_colour=BLACK)
@@ -50,22 +35,16 @@ exp = design.Experiment(name="Confidence-framing",
 
 control.initialize(exp)
 
-# generate stimuli
+# Generate stimuli
 fixation = stimuli.FixCross(size=(40, 40),
                             colour=WHITE,
                             line_width=6)
 
-# dot_cloud = DotCloud(CLOUD_RADIUS, (-300, 0), dot_colour=WHITE)
 
-left_circle = stimuli.Circle(
-    radius=300, colour=WHITE, position=(-300, 0), line_width=5)
-right_circle = stimuli.Circle(
-    radius=300, colour=WHITE, position=(300, 0), line_width=5)
+# figure out how to import image stimuli
 
 canvas = stimuli.Canvas(size=exp.screen.size, colour=BLACK)
 
-left_circle.plot(canvas)
-right_circle.plot(canvas)
 fixation.plot(canvas)
 
 # Run experiment
@@ -105,5 +84,5 @@ for trial in range(N_TRAILS_PER_TARGET):
                                                 misc.constants.K_3, misc.constants.K_4])
     confidence_rating = int(conf_key)-48  # Convert ASCII value to integer
     exp.data.add([confidence_rating])
-    # exp.data.add([key, rt, conf_key])
+    # exp.data.add([key, rt, conf_key]) ADAPT TO RECORD VARIABLES OF INTEREST, including frame condition
 control.end()
