@@ -12,7 +12,7 @@ def generate_numbers(baseline, percent_increases):
     return dotnums_list
 
 
-def generate_random_circles(num_dots, dot_rad, array_rad):
+def generate_random_dots(num_dots, dot_rad, array_rad):
     dots = []
     while len(dots) < num_dots:
         # for a random 'angle' with a specific 'distance' from the centre, calculate the 'x' and 'y' coordinates of the dot for plotting
@@ -34,7 +34,7 @@ def overlap(dotA, dotB):  # check if dot positions overlap
     return distance_squared < (r1 + r2)**2
 
 
-def plot_random_circles(dots, array_rad):
+def plot_random_dots(dots, array_rad):
     fig, ax = plt.subplots(facecolor='black')
     ax.add_patch(plt.Circle((0, 0), array_rad,
                  color='white', fill=False))
@@ -43,29 +43,23 @@ def plot_random_circles(dots, array_rad):
         x, y, radius = dot
         ax.add_patch(plt.Circle((x, y), radius, color='white'))
 
-    # plot the boundary of the circular window
-    ax.set_aspect('equal', adjustable='box')
+    # ax.set_aspect('equal', adjustable='box')
     ax.autoscale_view()
     plt.axis('off')
 
 
-baseline_levels = [50, 100, 150]
-percent_increases = np.linspace(-0.20, 0.20, 21)
-dotnumberspertrial = generate_numbers(baseline_levels, percent_increases)
+BASELINE_LEVELS = [50, 100, 150]
+PERCENT_INCREASES = np.linspace(-0.20, 0.20, 21)
+dotnumberspertrial = generate_numbers(BASELINE_LEVELS, PERCENT_INCREASES)
 
-# Parameters
-num_dots_values = dotnumberspertrial
-# num_dots_values = [10, 20, 25, 30, 25]  # Different numbers of circles
-dot_radius = 0.1  # Specify fixed radius for all circles
-array_radius = 10  # Specify radius of the circular window
+DOT_RADIUS = 0.1  # Specify radius of dots
+ARRAY_RADIUS = 10  # Specify radius of the area where the dots are presented
 
 # Generate random circles and save images for each number of circles
-for num_dots in num_dots_values:
-    dots = generate_random_circles(num_dots, dot_radius, array_radius)
-    plot_random_circles(dots, array_radius)
+for num_dots in dotnumberspertrial:
+    dots = generate_random_dots(num_dots, DOT_RADIUS, ARRAY_RADIUS)
+    plot_random_dots(dots, ARRAY_RADIUS)
 
-    # Save path indicating the number of circles
     save_path = f"/Users/elainecasey/Documents/ConfidenceFramingEffects/stimuli/random_dots_{num_dots}.png"
-    # plot_random_circles(circles, window_radius, save_path)
     plt.savefig(save_path, bbox_inches='tight')
     plt.close()
