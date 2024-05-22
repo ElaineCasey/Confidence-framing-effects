@@ -10,17 +10,14 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 LEFT_PRESS = 'f'
 RIGHT_PRESS = 'j'
-N_TRIALS = 20
-# Between subjects design. When calling .py file in terminal specify argument of "MORE" or "LESS"
+N_TRIALS = 60
 FRAME_CONDITION = sys.argv[1]
 
 # load pre-generated image stimuli
 dir_path = r'/Users/elainecasey/Documents/ConfidenceFramingEffects/stimuli'
 STIM_FILES = []
 for path in os.listdir(dir_path):
-    # check if current path is a file
-    if os.path.isfile(os.path.join(dir_path, path)):
-        STIM_FILES.append(path)
+    STIM_FILES.append(path)
 
 # Generate fixation cross
 fixation = stimuli.FixCross(size=(40, 40),
@@ -100,7 +97,7 @@ for trial in range(N_TRIALS):
                                                 misc.constants.K_3, misc.constants.K_4])
     confidence_rating = int(conf_key)-48  # Convert ASCII value to integer
 
-    exp.data.add([key, rt, conf_key, confidence_rating])
+    exp.data.add([key, rt, conf_key, confidence_rating, trial_stim])
 
     # ISI
     blankscreen.present()
