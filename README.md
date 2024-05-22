@@ -9,8 +9,9 @@ This is a replication of experiment from Sakamoto & Miyoshi (2024) examining con
 Stimuli are white dots that are positioned within a white rimmed circle with size 6 degrees of visual angle. There are two circles filled with dots presented on screen.
 The number of dots in a stimulus varies on 20 levels from three baseline levels (50, 100, 150) in steps of 2% increase or decrease.
 The dots are positioned randomly within the circle frame with no overlap.
-![Example stimulus](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png = 250 x 250)
 
+<!-- ![Example stimulus](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png = 250 x 250) -->
+<img src="https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png" width="100" height="100">
 To generate the [stimuli](https://github.com/ElaineCasey/Confidence-framing-effects/tree/main/stimuli) run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
 The images generated and saved by this script will be used by the [experiment script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py).
 
