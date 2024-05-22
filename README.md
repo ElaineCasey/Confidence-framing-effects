@@ -25,10 +25,7 @@ Participants are assigned to either a 'more' or 'less' condition. In the 'more' 
 Confidence is reported for each condition. Frame is a between-subjects factor.
 
 When calling confidence_framing_experiment.py input the frame condition as an argument.
-For example,
-code = '''
-python confidecne_framing_experiment.py MORE
-'''
+For example, `python confidecne_framing_experiment.py MORE`
 
 ## Reference
 
