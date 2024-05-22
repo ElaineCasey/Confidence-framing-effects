@@ -27,6 +27,10 @@ Confidence is reported for each condition. Frame is a between-subjects factor.
 When calling confidence_framing_experiment.py input the frame condition as an argument.
 For example, `python confidecne_framing_experiment.py MORE`
 
+### Data
+
+Subjects perceptual responses and reaction times, confidence ratings and the time it took them to register a confidnece response are recorded.
+
 ## Reference
 
 Sakamoto, Y., & Miyoshi, K. (2024). A confidence framing effect: Flexible use of evidence in metacognitive monitoring. Consciousness and Cognition, 118, 103636.
