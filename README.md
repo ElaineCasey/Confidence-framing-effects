@@ -17,7 +17,7 @@ The images generated and saved by this script will be used by the [experiment sc
 
 ### Proceudre
 
-At the beginning of each trial, a fixation cross is presented for 500ms. The stimuli are presneted for 600ms. Participants are asked to respond using the left and right arrow keys. Participants are then asked to indicate their confidence on this trial on a scale from 1 to 4 using the number keys. There is a 500ms break between each trial.
+At the beginning of each trial, a fixation cross is presented for 500ms. The stimuli are presneted for 600ms. Participants are asked to respond using the 'f' and 'j' keys. Participants are then asked to indicate their confidence on this trial on a scale from 1 to 4 using the number keys. There is a 500ms break between each trial.
 
 #### Framing condition
 
