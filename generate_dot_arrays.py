@@ -34,8 +34,8 @@ def overlap(dotA, dotB):  # check if dot positions overlap
     return distance_squared < (r1 + r2)**2
 
 
-def plot_random_dots(dots, array_rad):
-    fig, ax = plt.subplots(facecolor='black')
+def plot_random_dots(dots, array_rad, imgsize=(10, 10)):
+    fig, ax = plt.subplots(facecolor='black', figsize=imgsize)
     ax.add_patch(plt.Circle((0, 0), array_rad,
                  color='white', fill=False))
 
@@ -43,7 +43,8 @@ def plot_random_dots(dots, array_rad):
         x, y, radius = dot
         ax.add_patch(plt.Circle((x, y), radius, color='white'))
 
-    # ax.set_aspect('equal', adjustable='box')
+    # make images square
+    ax.set_aspect('equal', adjustable='box')
     ax.autoscale_view()
     plt.axis('off')
 
@@ -52,8 +53,8 @@ BASELINE_LEVELS = [50, 100, 150]
 PERCENT_INCREASES = np.linspace(-0.20, 0.20, 21)
 dotnumberspertrial = generate_numbers(BASELINE_LEVELS, PERCENT_INCREASES)
 
-DOT_RADIUS = 0.1  # Specify radius of dots
-ARRAY_RADIUS = 10  # Specify radius of the area where the dots are presented
+DOT_RADIUS = 0.3  # Specify radius of dots
+ARRAY_RADIUS = 20  # Specify radius of the area where the dots are presented
 
 # Generate random circles and save images for each number of circles
 for num_dots in dotnumberspertrial:
