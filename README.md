@@ -12,8 +12,8 @@ The dots are positioned randomly within the circle frame.
 
 Each dot number level is presnted four times.
 
-To generate the stimuli please call generate_dot_arrays.py
-The images generated and saved by this script will be used for the experiment.
+To generate the stimuli run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
+The images generated and saved by this script will be used by the [experiment script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py).
 
 ### Proceudre
 
