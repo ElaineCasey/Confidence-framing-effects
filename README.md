@@ -24,8 +24,11 @@ At the beginning of each trial, a fixation cross is presented, with a size of 1 
 
 #### Framing condition
 
-Participants are randomly assigned to either a 'more' or 'less' condition. In the 'more' condition, they are asked to respond to the stimulus with a greater number of dots. In the 'less' condition, they are asked to respond to the stimulus with a fewer number of dots.
+Participants are assigned to either a 'more' or 'less' condition. In the 'more' condition, they are asked to respond to the stimulus with a greater number of dots. In the 'less' condition, they are asked to respond to the stimulus with a fewer number of dots.
 Confidence is reported for each condition. Frame is a between-subjects factor.
+
+When calling confidence_framing_experiment.py input the frame condition as an argument.
+For example, `python confidecne_framing_experiment.py MORE`
 
 ## Reference
 
