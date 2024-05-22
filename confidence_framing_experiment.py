@@ -19,6 +19,8 @@ STIM_FILES = []
 for path in os.listdir(dir_path):
     STIM_FILES.append(path)
 
+# file is uploaded from Mac onto github also, cannot get rid of using .gitignore
+STIM_FILES.remove('.DS_Store')
 # Generate fixation cross
 fixation = stimuli.FixCross(size=(40, 40),
                             colour=WHITE,
