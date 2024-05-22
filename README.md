@@ -6,13 +6,12 @@ This is a replication of experiment from Sakamoto & Miyoshi (2024) examining con
 
 ### Stimuli
 
-Stimuli are white dots with a size of 0.15 degrees of visual angle. The dots appear within a white rimmed circle with size 6 degrees of visual angle. There are two circles filled with dots presented on screen.
-The number of dots in one stimulus is set on three levels (50, 100, 150). The number of dots in the second stimulus varies on 20 levels from this baseline in steps of 2% increase or decrease.
-The dots are positioned randomly within the circle frame.
+Stimuli are white dots that are positioned within a white rimmed circle with size 6 degrees of visual angle. There are two circles filled with dots presented on screen.
+The number of dots in a stimulus varies on 20 levels from three baseline levels (50, 100, 150) in steps of 2% increase or decrease.
+The dots are positioned randomly within the circle frame with no overlap.
+![Example stimulus](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png)
 
-Each dot number level is presnted four times.
-
-To generate the stimuli run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
+To generate the [stimuli](https://github.com/ElaineCasey/Confidence-framing-effects/tree/main/stimuli) run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
 The images generated and saved by this script will be used by the [experiment script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py).
 
 ### Proceudre
@@ -20,7 +19,7 @@ The images generated and saved by this script will be used by the [experiment sc
 There is first a practice session with 10 trials.
 The main experiment consists of 6 blocks with 40 trials.
 
-At the beginning of each trial, a fixation cross is presented, with a size of 1 degree of visual angle, for 500ms. The stimuli are presneted for 600ms. Participants are asked to respond using the left and right arrow keys. A likert scale with 4 options is then presented for participants to indicate their confidence on this trial. There is 500ms between each trial.
+At the beginning of each trial, a fixation cross is presented for 500ms. The stimuli are presneted for 600ms. Participants are asked to respond using the left and right arrow keys. Participants are then asked to indicate their confidence on this trial on a scale from 1 to 4 using the number keys. There is a 500ms break between each trial.
 
 #### Framing condition
 
