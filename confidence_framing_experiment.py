@@ -28,7 +28,7 @@ fixation = stimuli.FixCross(size=(40, 40),
 
 
 def display_scale():
-    scale_text = """How confident are you? 
+    scale_text = """How confident are you in your choice? 
 
     1 - Not confident at all  2 - Somewhat confident  3 - Quite confident  4 - Very confident"""
     scale = stimuli.TextScreen(
