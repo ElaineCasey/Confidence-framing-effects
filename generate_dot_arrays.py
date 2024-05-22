@@ -7,8 +7,7 @@ def generate_numbers(baseline, percent_increases):
     for i in baseline:
         for pchange in percent_increases:
             adjusted_num = int(i * (1 + pchange))
-            if adjusted_num != i:
-                dotnums_list.append(adjusted_num)
+            dotnums_list.append(adjusted_num)
     return dotnums_list
 
 
