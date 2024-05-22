@@ -10,7 +10,7 @@ Stimuli are white dots that are positioned within a white rimmed circle. There a
 The number of dots in a stimulus varies on 20 levels from three baseline levels (50, 100, 150) in steps of 2% increase or decrease.
 The dots are positioned randomly within the circle frame with no overlap.
 
-<img src="https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png" width="100" height="100">
+<img src="https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png" width="150" height="150">
 
 To generate the [stimuli](https://github.com/ElaineCasey/Confidence-framing-effects/tree/main/stimuli) run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
 The images generated and saved by this script will be used by the [experiment script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py).
