@@ -6,7 +6,7 @@ This is a replication of experiment from Sakamoto & Miyoshi (2024) examining con
 
 ### Stimuli
 
-Stimuli are white dots that are positioned within a white rimmed circle with size 6 degrees of visual angle. There are two circles filled with dots presented on screen.
+Stimuli are white dots that are positioned within a white rimmed circle. There are two circles filled with dots presented on the left and right sides of the screen. In the centre a fixation cross is presented.
 The number of dots in a stimulus varies on 20 levels from three baseline levels (50, 100, 150) in steps of 2% increase or decrease.
 The dots are positioned randomly within the circle frame with no overlap.
 
