@@ -12,6 +12,7 @@ The dots are positioned randomly within the circle frame with no overlap.
 
 <!-- ![Example stimulus](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png = 250 x 250) -->
 <img src="https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/stimuli/random_dots_46.png" width="100" height="100">
+
 To generate the [stimuli](https://github.com/ElaineCasey/Confidence-framing-effects/tree/main/stimuli) run this [script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py) prior to beginning the experiment.
 The images generated and saved by this script will be used by the [experiment script](https://github.com/ElaineCasey/Confidence-framing-effects/blob/main/confidence_framing_experiment.py).
 
