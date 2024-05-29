@@ -60,6 +60,6 @@ for num_dots in dotnumberspertrial:
     dots = generate_random_dots(num_dots, DOT_RADIUS, ARRAY_RADIUS)
     plot_random_dots(dots, ARRAY_RADIUS)
 
-    save_path = f"/Users/elainecasey/Documents/ConfidenceFramingEffects/stimuli/random_dots_{num_dots}.png"
+    save_path = f"stimuli/random_dots_{num_dots}.png"
     plt.savefig(save_path, bbox_inches='tight')
     plt.close()
