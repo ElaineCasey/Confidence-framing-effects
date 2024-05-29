@@ -14,13 +14,14 @@ N_TRIALS = 60
 FRAME_CONDITION = sys.argv[1]
 
 # load pre-generated image stimuli
-dir_path = r'/Users/elainecasey/Documents/ConfidenceFramingEffects/stimuli'
+dir_path = r'stimuli'
 STIM_FILES = []
 for path in os.listdir(dir_path):
     STIM_FILES.append(path)
 
 # file is uploaded from Mac onto github also, cannot get rid of using .gitignore
 STIM_FILES.remove('.DS_Store')
+
 # Generate fixation cross
 fixation = stimuli.FixCross(size=(40, 40),
                             colour=WHITE,
@@ -99,7 +100,7 @@ for trial in range(N_TRIALS):
                                                 misc.constants.K_3, misc.constants.K_4])
     confidence_rating = int(conf_key)-48  # Convert ASCII value to integer
 
-    exp.data.add([key, rt, conf_key, confidence_rating, trial_stim])
+    exp.data.add([key, rt, confidence_rating, conf_rt, trial_stim])
 
     # ISI
     blankscreen.present()
